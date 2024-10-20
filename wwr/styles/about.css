@@ -1,0 +1,84 @@
+.hero {
+    color: black;
+  }
+  .hero img {
+    display: block;
+    height: auto;
+  }
+  .image {
+    width: 100%;
+  }
+  h1 {
+    position: absolute;
+    top: 40%;
+  }
+  article {
+    position: absolute;
+    top: 50%;
+    color: black;
+    background-color: rgba(123, 123, 194, 0.363);
+    font-size: 24px;
+  }
+  article img {
+    float: right;
+    width: 20%;
+  }
+  
+  section img {
+    width: 30%;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+  header {
+    background-color: var(--primary-color);
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: steelblue;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    width: 40%;
+    margin: auto;
+  }
+  
+  .figureImage {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+  }

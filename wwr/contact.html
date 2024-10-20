@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simple Contact page, made in BYU-Idaho course, with the pourpose of learning about web development"
+    />
+    <meta name="author" content="Vitor Sampaio" />
+    <title>Contact - Sampaioz Rafting Company</title>
+    <link rel="stylesheet" href="styles/rafting.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/raftinglogoo.jpg" alt="my-logo" />
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+    <main>
+      <section class="company-info">
+        <h1>Company Information</h1>
+        <p>Address: R. Henrique Sommer 24, 2400-137 - Leiria</p>
+        <p>Phone: 925470553</p>
+        <p>Email: sampaiozrafting@gmail.com</p>
+
+        <!-- Embedded Google Map -->
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1327.7347837422137!2d-8.805745991812865!3d39.739567878696086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22736feca9b179%3A0xd8ac56fbc3196bb2!2sA%20Igreja%20de%20Jesus%20Cristo%20dos%20Santos%20dos%20%C3%9Altimos%20Dias!5e0!3m2!1spt-PT!2spt!4v1707518921368!5m2!1spt-PT!2spt"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <!-- Employee Profiles -->
+      <section>
+        <h2 class="flex">Meet Our Team</h2>
+        <div class="employee-profiles">
+          <div class="employee">
+            <img src="./images/my-profile.avif" alt="Employee 1" />
+            <p>Caption: Vitor Sampaio - CEO</p>
+          </div>
+          <div class="employee">
+            <img src="./images/marcus.jpg" alt="Employee 2" />
+            <p>Caption: Marcus Arelio - HR</p>
+          </div>
+          <div class="employee">
+            <img src="./images/jessica.jpg" alt="Employee 3" />
+            <p>Caption: Jessica Reis - Web Design</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label>Purpose of Message:</label>
+          <br /><br />
+          <input
+            type="radio"
+            id="generalInquiry"
+            name="purpose"
+            value="General Inquiry"
+            checked
+          />
+          <label for="generalInquiry">General Inquiry</label>
+
+          <input
+            type="radio"
+            id="reservationQuestion"
+            name="purpose"
+            value="Reservation Question"
+          />
+          <label for="reservationQuestion">Reservation Question</label>
+
+          <input
+            type="radio"
+            id="websiteSuggestion"
+            name="purpose"
+            value="Website Suggestion"
+          />
+          <label for="websiteSuggestion">Website Suggestion</label>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+          <label for="subscribe"
+            >Please subscribe me to the monthly newsletter</label
+          >
+
+          <button type="submit" id="submitButton">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <nav class="sociallinks">
+        <a href="https://facebook.com">
+          <img src="images/facebook.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com">
+          <img src="images/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://instagram.com">
+          <img src="images/instagram.jpg" alt="Instagram" />
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>
